@@ -6,7 +6,7 @@ public class Lab {
      *     Let's say we have two users, named "admin" and "user".
      *     "admin" has a password of "qwerty".
      *     "user" has a password of "password".
-     *
+     * in java 
      * The method should return true if the login should be permitted, and false if it should not. You will need to use
      * if/else statements.
      *
@@ -14,7 +14,11 @@ public class Lab {
      * @param password a String that represents a password.
      * @return true if there is a successful login, and false otherwise.
      */
-    public boolean login(String username, String password){
-        return false;
+    public boolean login(String username, String password) {
+        if (username.equals("admin") && password.equals("qwerty") || username.equals("user") && password.equals("password")) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
